@@ -126,7 +126,6 @@ a:active {
     --color-white: #ffffff;
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
-
     --text-color: var(--color-black);
 
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -146,25 +145,21 @@ a:active {
     --line-height-big: 1.8;
 
     --section-header-align: center;
-
     --section-tagline-transform: uppercase;
-
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
-
     --section-padding: 5rem 0;
     --section-header-padding: 0 0 3rem;
     --section-body-padding: 0 0 3rem;
     --section-footer-padding: 3rem 0 0;
     --section-footer-align: center;
-
     --footer-padding: 5rem 0 1rem;
 
     --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: calc(4% * 1rem);
+    --nav-item-letter-spacing: 0.04rem;
     --nav-item-display: inline-block;
-    --nav-item-margin: calc(3 * 1rem) 0 0 0;
+    --nav-item-margin: 0 0 3rem 0;
     --nav-item-link-hover: var(--color-primary);
 }
