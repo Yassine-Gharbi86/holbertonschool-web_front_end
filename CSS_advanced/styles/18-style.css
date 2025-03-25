@@ -1,8 +1,15 @@
 @import url('normalize.css');
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
+
 body {
     color: var(--text-color);
     font-family: var(--font-family-base);
@@ -33,25 +40,41 @@ a:active {
     background-color: var(--color-light-grey);
 }
 
+.navbar-menu {
+    float: right;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+.nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
+}
+
 .visually-hidden {
     display: none;
 }
 
 .card-category {
     color: var(--color-primary);
-}
-
-.section-tagline {
-    color: var(--color-primary);
-    font-family: var(--font-family-title);
-    text-transform: var(--section-tagline-transform);
-    font-weight: var(--font-weight-bold);
-}
-
-.container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .section {
@@ -72,10 +95,6 @@ a:active {
     text-align: var(--section-footer-align);
 }
 
-.footer {
-    padding: var(--footer-padding);
-}
-
 .section-title {
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
@@ -84,38 +103,21 @@ a:active {
     color: var(--section-title-color);
 }
 
-*, *::before, *::after {
-    box-sizing: border-box;
+.section-tagline {
+    color: var(--color-primary);
+    font-family: var(--font-family-title);
+    text-transform: var(--section-tagline-transform);
+    font-weight: var(--font-weight-bold);
 }
 
-.navbar-menu {
-    float: right;
+.container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-nav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-
-nav .nav-item {
-    font-family: var(--nav-item-font-family);
-    font-weight: var(--nav-item-font-weight);
-    font-size: var(--nav-item-font-size);
-    letter-spacing: var(--nav-item-letter-spacing);
-    display: var(--nav-item-display);
-    margin: var(--nav-item-margin);
-}
-
-av .nav-link {
-    display: block;
-    padding: calc(0.5 * 1rem) 1rem;
-}
-
-
-nav .nav-link:hover {
-    color: var(--nav-item-link-hover);
+.footer {
+    padding: var(--footer-padding);
 }
 
 :root {
